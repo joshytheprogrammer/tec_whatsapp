@@ -2,7 +2,7 @@
   <nav>
     <h2>
       <NuxtLink class="logo" to="/">
-        TEC <span>whatsapp</span>
+        TEC <sup> <Icon name="logos:whatsapp-icon" size="0.7em" /> </sup>
       </NuxtLink>
     </h2>
     <div class="contact">

@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <img src="" alt="TEC Whatsapp Banner " id="banner_ad_image">
+    <img src="https://firebasestorage.googleapis.com/v0/b/tec-whatsapp.appspot.com/o/Banners%2FFirst%20TEC%20banner%20-%20Desktop.png?alt=media&token=7a23e4b5-47e5-4760-a021-9e15b06bd98e" alt="TEC Whatsapp Banner " id="banner_ad_image">
   </section>
 </template>
 
@@ -13,9 +13,9 @@
   margin: 1rem 3rem 0 3rem;
 
   #banner_ad_image {
-    width: 100%;
+    max-width: 100%;
     height: 300px;
-    object-fit: fill;
+    object-fit: contain;
     border-radius: $standard-r;
   }
 

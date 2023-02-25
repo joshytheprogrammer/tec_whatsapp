@@ -22,7 +22,7 @@ nav {
   top: 0;
 
   user-select: none;
-  background: $light;
+  background: $primary;
   width: 100%;
   height: 72px;
 
@@ -30,7 +30,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 4px $t-dark;
   backdrop-filter: blur(2px);
 
   h2 {
@@ -44,7 +44,7 @@ nav {
     .logo {
       text-decoration: none;
       cursor: pointer;
-      color: $primary;
+      color: $light;
     }
   }
 
@@ -52,9 +52,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: $light;
 
     span a {
-      color: $primary;
+      color: $light;
     }
   }
 
@@ -90,6 +91,5 @@ nav {
       }
     }
   }
-
 }
 </style>

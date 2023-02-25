@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '@/assets/main.css',
   ],
   modules: [
-    'nuxt-icon'
+    'nuxt-icon',
+    '@pinia/nuxt',
   ]
 })

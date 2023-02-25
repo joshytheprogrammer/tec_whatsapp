@@ -66,7 +66,7 @@ nav {
     .logo {
 
       font: {
-        size: 28px;
+        size: 32px;
         weight: 500;
       }
     }
@@ -87,7 +87,7 @@ nav {
 
       font: {
         size: 24px;
-        weight: 500;
+        weight: 600;
       }
     }
   }

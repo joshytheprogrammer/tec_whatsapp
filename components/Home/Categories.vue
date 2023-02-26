@@ -3,13 +3,16 @@
     <AppHeaders>
       <template #title>Popular Categories</template>
     </AppHeaders>
-    <div class="categories">
+    <AppLoader v-if="$fetchState.pending" />
+    <AppNetworkError v-else-if="$fetchState.error || error" :message="error" />
+    <div v-else class="categories">
       <AppCardsCategory v-for="item in categories" :key="item.id" :item="item" />
     </div>
   </div>
 </template>
 
 <script setup>
+let error = 'An error occurred'
 let categories = [
   {
     id: 0,

@@ -14,7 +14,7 @@
 
   #banner_ad_image {
     max-width: 100%;
-    height: 300px;
+    max-height: 300px;
     object-fit: contain;
     border-radius: $standard-r;
   }
@@ -23,7 +23,7 @@
     margin: 12px 14px 0 14px;
 
     #banner_ad_image {
-      height: 200px;
+      max-height: 200px;
     }
   }
 }

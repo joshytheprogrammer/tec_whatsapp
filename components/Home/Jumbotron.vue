@@ -5,7 +5,9 @@
 </template>
 
 <script setup>
+import { useMobileStore } from '@/store/mobile'
 
+const device = useMobileStore()
 </script>
 
 <style lang="scss" scoped>

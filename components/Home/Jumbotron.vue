@@ -52,7 +52,7 @@
   display: flex;
   justify-content: center;
 
-  margin: 1rem 3rem 0 3rem;
+  margin: 1rem 3rem;
 
   transition: all .3s ease-in-out;
 

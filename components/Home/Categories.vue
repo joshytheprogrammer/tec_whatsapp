@@ -3,10 +3,27 @@
     <AppHeaders>
       <template #title>Popular Categories</template>
     </AppHeaders>
+    <div class="categories">
+      <AppCardsCategory v-for="item in categories" :key="item.id" :item="item" />
+    </div>
   </div>
 </template>
 
 <script setup>
+let categories = [
+  {
+    id: 0,
+    name: "Chocolate cake",
+    thumbnail: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80",
+    slug: "/chocolate-cake"
+  },
+  {
+    id: 1,
+    name: "Birthday Cakes",
+    thumbnail: "https://images.unsplash.com/photo-1571622840901-92ae138bd36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80",
+    slug: "/birthday-cakes"
+  }
+];
 
 </script>
 

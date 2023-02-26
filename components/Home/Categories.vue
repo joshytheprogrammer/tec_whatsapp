@@ -1,8 +1,8 @@
 <template>
   <div class="popular" id="categories">
-    <Headers>
+    <AppHeaders>
       <template #title>Popular Categories</template>
-    </Headers>
+    </AppHeaders>
   </div>
 </template>
 
@@ -11,5 +11,14 @@
 </script>
 
 <style lang="scss" scoped>
+.popular {
+  background: $light;
+  margin-bottom: 2rem;
 
+  .categories {
+    padding: 2rem 12px;
+    display: flex;
+    overflow: auto;
+  }
+}
 </style>

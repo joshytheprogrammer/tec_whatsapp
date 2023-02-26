@@ -1,6 +1,6 @@
 <template>
   <div class="home">
     <HomeJumbotron />
-    <AppHelpers />
+    <HomeCategories />
   </div>
 </template>

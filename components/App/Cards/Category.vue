@@ -11,7 +11,6 @@
 
 <script setup>
   const props = defineProps(['item']);
-
   const item = props.item;
 </script>
 

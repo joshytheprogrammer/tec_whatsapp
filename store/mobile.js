@@ -6,6 +6,11 @@ export const useCounterStore = defineStore('mobile', {
   }),
   actions: {
     checkWidth() {
+      if(!window) {
+        this.isMobile = false 
+        return
+      }
+      
       let w = window.innerWidth
 
       // If statement to check width

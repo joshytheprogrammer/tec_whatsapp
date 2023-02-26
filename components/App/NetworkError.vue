@@ -1,6 +1,6 @@
 <template>
   <div class="error" v-if="message">
-    <p class="message">{{message}}.. Try <span @click="() => {$nuxt.refresh()}">Refreshing</span></p>
+    <p class="message">{{message}}.. Try <span @click="async () => {await refreshNuxtData()}">Refreshing</span></p>
   </div>
 </template>
 

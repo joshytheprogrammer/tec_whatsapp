@@ -22,6 +22,12 @@ let categories = [
     name: "Birthday Cakes",
     thumbnail: "https://images.unsplash.com/photo-1571622840901-92ae138bd36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80",
     slug: "/birthday-cakes"
+  },
+  {
+    id: 2,
+    name: "Wedding Cakes",
+    thumbnail: "https://images.unsplash.com/photo-1623428454614-abaf00244e52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80",
+    slug: "/wedding-cakes"
   }
 ];
 

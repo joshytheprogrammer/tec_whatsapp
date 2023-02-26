@@ -64,7 +64,7 @@
   }
 
   @media screen and (max-width: $medium) {
-    margin: 12px 14px 0 14px;
+    margin: 12px 14px;
 
     #banner_ad_image {
       max-height: 200px;

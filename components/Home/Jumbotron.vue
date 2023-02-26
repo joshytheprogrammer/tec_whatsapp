@@ -10,6 +10,8 @@ import { useMobileStore } from '@/store/mobile'
 // Get device details from store
 const device = useMobileStore()
 
+let currentNo = 0
+
 // Will contain current banner
 let banner = ''
 
@@ -26,9 +28,23 @@ let mobileBanners = [
   "https://firebasestorage.googleapis.com/v0/b/neas-fashion.appspot.com/o/Banner%2FNeas%20fashion%20banner%20ad%20-%20mobile.png?alt=media&token=d71b410b-06f3-49f4-8f2c-d93c1bf0734e"
 ]
 
-device.getDevice ? banners = mobileBanners : banners = desktopBanners
+onMounted(() => {
+  device.getDevice ? banners = mobileBanners : banners = desktopBanners
 
-banner = banners[0]
+  banner = banners[0]
+
+  setInterval(() => {
+    doSlideShow()
+  }, 10000)
+});
+
+function doSlideShow() {
+  if(currentNo > (banners.length - 1)) { currentNo = 0 }
+
+  this.banner = this.banners[this.currentNo]
+
+  this.currentNo++
+}
 </script>
 
 <style lang="scss" scoped>

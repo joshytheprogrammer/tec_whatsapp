@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-export const useCounterStore = defineStore('mobile', {
+export const useMobileStore = defineStore('mobile', {
   state: () => ({ 
     isMobile: true
   }),
@@ -10,7 +10,7 @@ export const useCounterStore = defineStore('mobile', {
         this.isMobile = false 
         return
       }
-      
+
       let w = window.innerWidth
 
       // If statement to check width

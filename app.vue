@@ -8,5 +8,10 @@
 </template>
 
 <script setup>
+import { useMobileStore } from '@/store/mobile'
 
+const device = useMobileStore()
+
+// or using an action instead
+device.checkWidth()
 </script>

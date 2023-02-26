@@ -26,17 +26,9 @@ let mobileBanners = [
   "https://firebasestorage.googleapis.com/v0/b/neas-fashion.appspot.com/o/Banner%2FNeas%20fashion%20banner%20ad%20-%20mobile.png?alt=media&token=d71b410b-06f3-49f4-8f2c-d93c1bf0734e"
 ]
 
-console.log(device.getDevice)
-
-if(device.getDevice == true) {
-  banners = mobileBanners
-}else {
-  banners = desktopBanners
-}
+device.getDevice ? banners = mobileBanners : banners = desktopBanners
 
 banner = banners[0]
-
-console.log(banner)
 </script>
 
 <style lang="scss" scoped>

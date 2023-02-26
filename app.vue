@@ -12,6 +12,18 @@ import { useMobileStore } from '@/store/mobile'
 
 const device = useMobileStore()
 
-// or using an action instead
+// Call the checkWidth ACTION
 device.checkWidth()
+
+// Recall that checkWidth action on resize
+onMounted(() => {
+  if(window) {
+    window.addEventListener("resize", device.checkWidth)
+  }
+})
+
+onUnmounted(() => {
+  window.removeEventListener("resize")
+})
+
 </script>

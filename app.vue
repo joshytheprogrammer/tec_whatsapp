@@ -20,12 +20,12 @@ onMounted(() => {
   if(process.client) {
     window.addEventListener("resize", device.checkWidth)
   }
-})
+});
 
 onUnmounted(() => {
   if(process.client) {
     window.removeEventListener("resize", device.checkWidth)
   }
-})
+});
 
 </script>

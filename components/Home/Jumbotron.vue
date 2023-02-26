@@ -10,7 +10,12 @@
 
 <style lang="scss" scoped>
 .hero {
+  display: flex;
+  justify-content: center;
+
   margin: 1rem 3rem 0 3rem;
+
+  transition: all .3s ease-in-out;
 
   #banner_ad_image {
     max-width: 100%;

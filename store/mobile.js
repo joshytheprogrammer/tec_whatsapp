@@ -1,3 +1,4 @@
+import { processExpression } from '@vue/compiler-core'
 import { defineStore } from 'pinia'
 
 export const useMobileStore = defineStore('mobile', {
@@ -6,7 +7,7 @@ export const useMobileStore = defineStore('mobile', {
   }),
   actions: {
     checkWidth() {
-      if(!window) {
+      if(!process.client) {
         this.isMobile = false 
         return
       }

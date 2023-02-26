@@ -17,13 +17,15 @@ device.checkWidth()
 
 // Recall that checkWidth action on resize
 onMounted(() => {
-  if(window) {
+  if(process.client) {
     window.addEventListener("resize", device.checkWidth)
   }
 })
 
 onUnmounted(() => {
-  window.removeEventListener("resize")
+  if(process.client) {
+    window.removeEventListener("resize", device.checkWidth)
+  }
 })
 
 </script>

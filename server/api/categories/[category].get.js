@@ -9,15 +9,18 @@ if (!apps.length) {
   })
 }
 
-export default defineEventHandler(async () => {
+export default defineEventHandler(async (event) => {
   const db = getFirestore()
-  const querySnap = await db.collection('categories').get()
-  const categoriesData = querySnap.docs.map(doc => {
+  const querySnap = await db.collection('categories')
+  .where("slug", "==", event.context.params.category)
+  .get()
+
+  const productsData = querySnap.docs.map(doc => {
     return {
       uuid: doc.id,
       ...doc.data()
     }
   })
-
-  return categoriesData
+  
+  return productsData
 })

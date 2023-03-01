@@ -45,6 +45,7 @@ function formatter(price) {
       display: block;
       padding: 1rem 0.5rem;
       color: $primary;
+      text-align: center;
 
       a {
         white-space: pre-line;

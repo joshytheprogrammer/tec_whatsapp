@@ -23,9 +23,15 @@ const { data: categories, pending, error } = await useFetch('/api/categories');
   margin-bottom: 2rem;
 
   .categories {
-    padding: 2rem 12px;
+    padding: 12px 48px;
     display: flex;
     overflow: auto;
+  }
+
+  @media screen and (max-width: $medium) {
+    .categories {
+      padding: 12px 14px;
+    }
   }
 }
 </style>

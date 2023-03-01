@@ -72,5 +72,28 @@ function formatter(price) {
       }
     }
   }
+
+  @media screen and (max-width: $medium){
+    .s {
+      img {
+        height: 200px;
+      }
+
+      ._details {
+        padding: 0.5rem 0;
+
+        a {
+          height: 46.4px;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        span {
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
 </style>

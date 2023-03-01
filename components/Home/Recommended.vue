@@ -43,9 +43,9 @@ const { data: products, pending, error } = await useFetch('/api/products/popular
       grid-template-columns: repeat(2,1fr);
     }
 
-    @media screen and (max-width: $s-medium) {
-      display: block;
-    }
+    // @media screen and (max-width: $s-medium) {
+    //   display: block;
+    // }
   }
 }
 </style>

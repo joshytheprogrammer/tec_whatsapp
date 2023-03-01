@@ -54,13 +54,12 @@ function doSlideShow() {
 
   margin: 1rem 3rem;
 
-  transition: all .3s ease-in-out;
-
   #banner_ad_image {
     max-width: 100%;
     max-height: 300px;
     object-fit: fill;
     border-radius: $standard-r;
+    transition: all .3s ease-in-out;
   }
 
   @media screen and (max-width: $medium) {

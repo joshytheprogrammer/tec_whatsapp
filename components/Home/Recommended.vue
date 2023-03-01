@@ -22,6 +22,7 @@ const { data: categories, pending, error } = await useFetch('/api/categories');
 
   .products {
     margin: 2rem;
+    padding: 12px 48px;
 
     display: grid;
     gap: 1rem;

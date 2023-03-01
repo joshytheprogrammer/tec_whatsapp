@@ -2,7 +2,7 @@
 // Primary -> 0, 100%, 32%
 // $primary:  hsl(221, 44%, 19%);
 $primary:  #09001e;
-$light:  #ebe8ed;
+$light:  hsl(212, 60%, 95%);
 $dark:  hsl(218, 58%, 4%);
 $t-dark: #00000076;
 $text-dark: hsl(0, 100%, 32%);
@@ -31,29 +31,19 @@ body  {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: $s-medium) {
-  canvas {
-    max-width: 100%;
-    max-height: 200px;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 8px;
   height: 4px;
 }
 
-  /* Track */
 ::-webkit-scrollbar-track {
   background: $light;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: $primary;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $dark;
 }

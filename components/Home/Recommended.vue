@@ -6,7 +6,7 @@
     <AppLoader v-if="pending"/>
     <AppNetworkError v-else-if="error || error" :message="error" />
     <div v-else class="products">
-      <!-- <Card v-for="item in recommended" :key="item.id" :item="item" /> -->
+      <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
     </div>
   </div>
 </template>
@@ -21,7 +21,6 @@ const { data: products, pending, error } = await useFetch('/api/products/popular
   margin-bottom: 2rem;
 
   .products {
-    margin: 2rem;
     padding: 12px 48px;
 
     display: grid;

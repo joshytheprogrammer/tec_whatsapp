@@ -71,42 +71,5 @@ function formatter(price) {
       }
     }
   }
-
-  @media screen and (max-width: $s-medium) {
-    padding: 0;
-    margin: 1rem 0;
-    width: 100%;
-
-    .s {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      border: 1px solid $primary;
-
-      height: 150px;
-      border-radius: 10px;
-
-      img {
-        width: 100%;
-        height: 150px;
-        object-fit: contain;
-        border-right: 1px solid $primary;
-        border-radius: 10px 0px 0px 10px;
-      }
-
-      ._details {
-        padding: 0.5rem;
-
-        a {
-          height: auto;
-          font-size: 18px;
-          font-weight: 600;
-        }
-
-        span {
-          font-size: 16px;
-        }
-      }
-    }
-  }
 }
 </style>

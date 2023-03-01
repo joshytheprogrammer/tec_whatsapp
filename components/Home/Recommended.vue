@@ -7,13 +7,6 @@
     <AppNetworkError v-else-if="error || error" :message="error" />
     <div v-else class="products">
       <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
-      <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
-      <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
-      <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
-      <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
-      <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
-      <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
-      <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
     </div>
   </div>
 </template>

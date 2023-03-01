@@ -18,7 +18,7 @@ const { data: products, pending, error } = await useFetch('/api/products/popular
 <style lang="scss" scoped>
 .recommended {
   background: $light;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   .products {
     padding: 12px 48px;

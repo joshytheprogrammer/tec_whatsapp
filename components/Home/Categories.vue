@@ -20,7 +20,7 @@ const { data: categories, pending, error } = await useFetch('/api/categories');
 <style lang="scss" scoped>
 .popular {
   background: $light;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   .categories {
     padding: 12px 48px;

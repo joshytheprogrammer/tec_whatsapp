@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-const { data: categories, pending, error } = await useFetch('/api/categories');
+const { data: products, pending, error } = await useFetch('/api/categories');
 </script>
 
 <style lang="scss" scoped>

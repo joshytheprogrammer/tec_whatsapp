@@ -4,7 +4,7 @@
       <AppHeaders>
         <template #title> {{ item.name }} </template>
       </AppHeaders>
-      
+      <HomeProducts :item="item" />
     </section>
   </div>
 </template>

@@ -7,7 +7,7 @@
           <h1 class="n"> {{product.name}} </h1>
           <p class="price" :title="product.name + ' costs ' + product.price">{{formatter(product.price)}}</p>
         </div>
-        <ShopItem />
+        <a class="btn" :href="url">Order Now</a>
       </div>
     </div>
   </div>
@@ -16,6 +16,8 @@
 <script setup>
 const props = defineProps(['item']);
 const product = props.item[0];
+
+const url = "https://api.whatsapp.com/send?phone=2347010718819&text=I want to order product found at - https://w.tecpastryworld.com/shop/"+product.slug
 
 function formatter(price) {
   let currency = '₦'
@@ -69,6 +71,9 @@ function formatter(price) {
     }
 
     .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       padding: 1rem;
 
       .inherent {
@@ -95,6 +100,21 @@ function formatter(price) {
           padding: 0.6rem 1rem;
           text-align: center;
         }
+      }
+
+      .btn {
+        display: block;
+        min-width: 150px;
+        width: 150px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: $success;
+        padding: 1rem;
+        font-size: 18px;
+        color: $dark;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
       }
     }
   }

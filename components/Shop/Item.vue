@@ -7,6 +7,7 @@
           <h1 class="n"> {{product.name}} </h1>
           <p class="price" :title="product.name + ' costs ' + product.price">{{formatter(product.price)}}</p>
         </div>
+        <ShopItem />
       </div>
     </div>
   </div>

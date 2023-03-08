@@ -11,7 +11,7 @@ if (!apps.length) {
 
 export default defineEventHandler(async (event) => {
   const db = getFirestore()
-  const querySnap = await db.collection('product')
+  const querySnap = await db.collection('products')
   .where("slug", "==", event.context.params.product)
   .get()
 

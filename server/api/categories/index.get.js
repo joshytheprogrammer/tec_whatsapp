@@ -14,7 +14,7 @@ export default defineEventHandler(async () => {
   const querySnap = await db.collection('categories').get()
   const categoriesData = querySnap.docs.map(doc => {
     return {
-      uuid: doc.id,
+      id: doc.id,
       ...doc.data()
     }
   })

@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
 
   const productsData = querySnap.docs.map(doc => {
     return {
-      uuid: doc.id,
+      id: doc.id,
       ...doc.data()
     }
   })

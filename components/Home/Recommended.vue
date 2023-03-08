@@ -4,7 +4,7 @@
       <template #title>Recommended this season</template>
     </AppHeaders>
     <AppLoader v-if="pending"/>
-    <AppNetworkError v-else-if="error || error" :message="error" />
+    <AppNetworkError v-else-if="error" :message="error" />
     <div v-else class="products">
       <AppCardsProduct v-for="item in products" :key="item.id" :item="item" />
     </div>

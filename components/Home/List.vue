@@ -2,7 +2,7 @@
   <div class="list">
     <section v-for="item in categories" :key="item.id" :id="item.id">
       <AppHeaders>
-        <template #title></template>
+        <template #title> {{ item.name }} </template>
       </AppHeaders>
     </section>
   </div>

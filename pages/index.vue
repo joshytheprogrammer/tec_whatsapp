@@ -3,5 +3,7 @@
     <HomeJumbotron />
     <HomeCategories />
     <HomeRecommended />
+    
+    <HomeList />
   </div>
 </template>

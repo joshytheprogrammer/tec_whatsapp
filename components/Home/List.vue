@@ -11,7 +11,6 @@
 
 <script setup>
 const { data: categories } = await useFetch('/api/categories');
-
 </script>
 
 <style lang="scss" scoped>

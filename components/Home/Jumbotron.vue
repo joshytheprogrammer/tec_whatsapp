@@ -52,7 +52,7 @@ function doSlideShow() {
   display: flex;
   justify-content: center;
 
-  margin: 1rem 3rem;
+  margin: 1rem 48px;
 
   #banner_ad_image {
     max-width: 100%;

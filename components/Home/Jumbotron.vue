@@ -52,7 +52,7 @@ function doSlideShow() {
   width: 100%;
   background-color: $primary;
   display: flex;
-  justify-content: center;s
+  justify-content: center;
 
   #banner_ad_image {
     max-width: 100%;
@@ -64,9 +64,12 @@ function doSlideShow() {
 
   @media screen and (max-width: $medium) {
     // margin: 12px 14px;
+    // border-radius: $standard-r;
 
     #banner_ad_image {
+      width: 100%;
       max-height: 200px;
+      // object-fit: contain;
     }
   }
 }

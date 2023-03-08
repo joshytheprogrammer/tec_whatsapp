@@ -11,8 +11,8 @@
 </template>
 
 <script setup>
-const props = defineProps(['product']);
-const product = props.product[0];
+const props = defineProps(['item']);
+const product = props.item[0];
 
 function formatter(price) {
   let currency = '₦'

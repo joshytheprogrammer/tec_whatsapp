@@ -2,7 +2,7 @@
   <div class="product">
     <AppLoader v-if="pending" />
     <AppNetworkError v-else-if="error" :message="error" />
-    <ShopItem :product="product" />
+    <ShopItem :item="product" />
   </div>
 </template>
 
@@ -11,7 +11,3 @@ const route = useRoute();
 
 const { data: product, pending, error } = await useFetch('/api/products/'+route.params.slug );
 </script>
-
-<style lang="scss" scoped>
-
-</style>

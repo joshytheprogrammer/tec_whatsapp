@@ -49,21 +49,24 @@ function doSlideShow() {
 
 <style lang="scss" scoped>
 .hero {
+  width: 100%;
+  background-color: $primary;
   display: flex;
   justify-content: center;
 
-  margin: 1rem 48px;
+
+  // margin: 1rem 48px;
 
   #banner_ad_image {
     max-width: 100%;
     max-height: 300px;
-    object-fit: fill;
-    border-radius: $standard-r;
+    object-fit: cover;
+    // border-radius: $standard-r;
     transition: all .3s ease-in-out;
   }
 
   @media screen and (max-width: $medium) {
-    margin: 12px 14px;
+    // margin: 12px 14px;
 
     #banner_ad_image {
       max-height: 200px;

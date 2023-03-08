@@ -2,7 +2,7 @@
   <div class="product">
     <AppLoader v-if="pending" />
     <AppNetworkError v-else-if="error" :message="error" />
-    <ShopItem :item="product" />
+    <!-- <ShopItem :item="product" /> -->
   </div>
 </template>
 

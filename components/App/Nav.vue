@@ -30,8 +30,8 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  box-shadow: 0px 2px 4px $t-dark;
-  backdrop-filter: blur(2px);
+  // box-shadow: 0px 2px 4px $t-dark;
+  // backdrop-filter: blur(2px);
 
   h2 {
     font: {

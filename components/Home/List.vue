@@ -4,6 +4,7 @@
       <AppHeaders>
         <template #title> {{ item.name }} </template>
       </AppHeaders>
+      
     </section>
   </div>
 </template>
@@ -14,5 +15,11 @@ const { data: categories } = await useFetch('/api/categories');
 </script>
 
 <style lang="scss" scoped>
-
+.list {
+  display: block;
+  
+  section {
+    margin-bottom: 1rem;
+  }
+}
 </style>

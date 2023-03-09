@@ -15,9 +15,6 @@ const device = useMobileStore()
 
 // Call the checkWidth ACTION
 device.checkWidth()
-
-// let isMobile = ref(device.getDevice);
-
 </script>
 
 <style lang="scss">

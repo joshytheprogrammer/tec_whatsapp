@@ -2,7 +2,7 @@
   <div class="app">
     <AppNav />
     <NuxtLayout>
-      <NuxtPage />
+      <NuxtPage class="body" />
     </NuxtLayout>
     <AppFooter />
   </div>
@@ -19,3 +19,11 @@ device.checkWidth()
 // let isMobile = ref(device.getDevice);
 
 </script>
+
+<style lang="scss">
+.app {
+  .body {
+    min-height: 100vh;
+  }
+}
+</style>

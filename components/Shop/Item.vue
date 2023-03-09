@@ -44,8 +44,6 @@ function formatter(price) {
 
   padding: 2rem 0;
 
-  
-
   ._item {
     padding: 1rem;
     border-radius: 10px;
@@ -74,6 +72,7 @@ function formatter(price) {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      
       padding: 1rem;
 
       .inherent {
@@ -139,6 +138,10 @@ function formatter(price) {
       img {
         max-height: 400px;
         border-radius: 10px 10px 0px 0px;
+      }
+
+      .details {
+        align-items: center;
       }
 
       .details .inherent {
